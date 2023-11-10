@@ -21,7 +21,7 @@ Each anchor tag will have padding of 20px;
 */
   
   h1 {
-    color: rgb(73, 142, 198);
+    color: steelblue;
   }
   /* This CSS rule references the <h1> element as the selected element and applies the following declaration:
 
