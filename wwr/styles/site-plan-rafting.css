@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --primary-color: #f4f482; // Pale yellow
-  --secondary-color: #75f4f4; // Light blue
-  --accent1-color: #314cb6; // Deep blue
-  --accent2-color: #b8b3e9; // Lavender
+  --primary-color: #f4f482;
+  --secondary-color: #75f4f4;
+  --accent1-color: #314cb6;
+  --accent2-color: #b8b3e9; 
   --heading-font: 'Playfair Display', serif;
   --paragraph-font: 'Poppins', sans-serif;
-  --nav-background-color: var(--primary-color); // Pale yellow
-  --nav-link-color: var(--secondary-color); // Light blue
-  --nav-hover-link-color: var(--accent1-color); // Deep blue
-  --nav-hover-background-color: rgba(0, 0, 0, 0.1); // Black with 10% opacity
+  --nav-background-color: var(--primary-color);
+  --nav-link-color: var(--secondary-color); 
+  --nav-hover-link-color: var(--accent1-color); 
+  --nav-hover-background-color: rgba(0, 0, 0, 0.1); 
 }
 
 /* Body */
