@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap');
+:root {
+    --primary-color: #f4f482; // Pale yellow
+    --secondary-color: #75f4f4; // Light blue
+    --accent1-color: #314cb6; // Deep blue
+    --accent2-color: #b8b3e9; // Lavender
+    --heading-font: 'Playfair Display', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+    --nav-background-color: var(--primary-color); // Pale yellow
+    --nav-link-color: var(--secondary-color); // Light blue
+    --nav-hover-link-color: var(--accent1-color); // Deep blue
+    --nav-hover-background-color: rgba(0, 0, 0, 0.1); // Black with 10% opacity
+  }
+  
+  /* Body */
+  body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color); /* Pale yellow */
+  }
+  
+  /* Header */
+  header {
+    padding: 20px;
+    background-color: var(--accent1-color); /* Deep blue */
+    color: #ffffff; /* White */
+  }
+  
+  /* Paragraphs */
+  p {
+    padding: 25px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: var(--nav-background-color); /* Pale yellow */
+    font-size: 1.2rem;
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    color: var(--nav-link-color); /* Light blue */
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  nav a:link,
+  nav a:visited {
+    color: var(--nav-link-color); /* Light blue */
+  }
+  
+  nav a:hover {
+    color: var(--nav-hover-link-color); /* Deep blue */
+    background-color: var(--nav-hover-background-color); /* Black with 10% opacity */
+  }
+  
