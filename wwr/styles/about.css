@@ -1,148 +1,134 @@
-
 :root {
-    --primary-color: #EFEFEF;
-    --secondary-color: #3454D1;
-    --accent1-color: #34D1BF;
-    --accent2-color: #070707;
-    --accent3-color: #D1345B;
-    --font-color-dark: var(--accent2-color);
-    --font-color-light: var(--primary-color);
-    --link-hover: var(--accent3-color);
-  }
-  
 
+  --primary-color: #EFEFEF;
+  
+  --secondary-color: #3454D1;
+  
+  --accent1-color: #34D1BF;
+  
+  --accent2-color: #070707;
+  
+  --accent3-color: #D1345B;
+  
+  --font-color-dark: var(--accent2-color);
+  
+  --font-color-light: var(--primary-color);
+  
+  --link-hover: var(--accent3-color);
+  
+  }
   body {
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--primary-color);
-    color: var(--font-color-dark);
-    line-height: 1.6;
-  }
   
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  color: var(--font-color-dark);
+  line-height: 1.6;
+  }
   main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   }
-  
- 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--accent1-color);
-    padding: 10px 20px;
-  }
-  
-  header img {
-    height: 60px;
-  }
-  
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-  }
-  
-  nav a {
-    color: var(--font-color-light);
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  nav a:hover {
-    color: var(--link-hover);
-  }
-  
- 
-  .hero {
-    position: relative;
-  }
-  
-  .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .hero h1 {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    color: var(--secondary-color);
-    font-family: 'Playfair', serif;
-    font-size: 3rem;
-  }
-  
+header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 120px 1fr 2fr;
+  background-color: var(--accent1-color);
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
 
-  .hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    background-color: rgba(133, 161, 171, 0.53);
-    padding: 15px;
-    max-width: 550px;
-    border-radius: 5px;
-  }
-  
-  .hero article img {
-    float: right;
-    width: 100px;
-    height: auto;
-    margin-left: 10px;
-  }
-  
- 
-  p {
-    font-size: 1rem;
-    color: var(--font-color-dark);
-  }
-  
- 
-  section h2 {
-    color: var(--secondary-color);
-    font-size: 2rem;
-    margin-top: 20px;
-  }
-  
-  section img {
-    width: 200px;
-    height: auto;
-    margin: 10px;
-  }
-  
+header img {
+  height: 60px;
+}
 
-  footer {
-    background-color: var(--accent2-color);
-    color: var(--font-color-light);
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .copyright-social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 0 20px;
-  }
-  
-  .social-media a {
-    display: inline-block;
-    margin: 0 5px;
-  }
-  
-  .social-media a img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  
-  .social-media a {
-    text-decoration: none;
-  }
-  
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: var(--font-color-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--link-hover);
+}
+
+/* History Section Styles */
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-section h2 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.history-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Adventures Section Styles */
+
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.adventures figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+}
+
+.adventures figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: var(--accent2-color);
+  color: var(--font-color-light);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.copyright-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-media a img {
+  width: 40px;
+  height: 40px;
+}
