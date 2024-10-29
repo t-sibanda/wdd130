@@ -13,7 +13,7 @@
   --nav-hover-background-color: rgba(0, 0, 0, 0.1); 
 }
 
-/* Body */
+
 body {
   font-family: var(--paragraph-font);
   max-width: 960px;
@@ -21,47 +21,47 @@ body {
   margin: 0 auto;
 }
 
-/* Headings */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  color: var(--primary-color); /* Pale yellow */
+  color: var(--primary-color); 
 }
 
-/* Header */
+
 header {
   padding: 20px;
-  background-color: var(--accent1-color); /* Deep blue */
-  color: #ffffff; /* White */
+  background-color: var(--accent1-color); 
+  color: #ffffff; 
 }
 
-/* Paragraphs */
+
 p {
   padding: 25px;
 }
 
-/* Navigation */
+
 nav {
-  background-color: var(--nav-background-color); /* Pale yellow */
+  background-color: var(--nav-background-color); 
   font-size: 1.2rem;
   display: flex;
 }
 
-/* Navigation Links */
+
 nav a {
   display: block;
-  color: var(--nav-link-color); /* Light blue */
+  color: var(--nav-link-color); 
   text-decoration: none;
   padding: 1rem;
 }
 
-/* Navigation Links: Unvisited and Visited */
+
 nav a:link,
 nav a:visited {
-  color: var(--nav-link-color); /* Light blue */
+  color: var(--nav-link-color); 
 }
 
-/* Navigation Links: Hover */
+
 nav a:hover {
-  color: var(--nav-hover-link-color); /* Deep blue */
+  color: var(--nav-hover-link-color); 
   background-color: var(--nav-hover-background-color); /* Black with 10% opacity */
 }
