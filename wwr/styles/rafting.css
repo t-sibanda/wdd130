@@ -24,15 +24,15 @@
   header {
     display: grid;
     align-items: center;
-    grid-template-columns: 120px 1fr 2fr;
-    background-color: var(--accent1-color);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: var(--accent2-color);
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
   }  
   header img {
     height: 60px;
   }
-  nav ul {
+ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -46,6 +46,193 @@
   nav a:hover {
     color: var(--link-hover);
   }
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--font-color-light);
+  }
+  .hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+ 
+  .newsletter-signup {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--font-color-light);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .newsletter-signup h3 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .newsletter-signup label {
+    display: block;
+    margin: 10px 0 5px;
+    color: var(--font-color-light);
+  }
+  .newsletter-signup input[type="text"],
+  .newsletter-signup input[type="email"] {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  .newsletter-signup button {
+    background-color: var(--secondary-color);
+    color: var(--font-color-light);
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .newsletter-signup button:hover {
+    background-color: var(--link-hover);
+  }
+  
+
+  .call-to-action {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .call-to-action p {
+    font-size: 1.5rem;
+    color: var(--font-color-dark);
+  }
+  .cta-button {
+    background-color: var(--secondary-color);
+    color: var(--font-color-light);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .cta-button:hover {
+    background-color: var(--link-hover);
+  }
+  
+  .cta {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--font-color-light);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.cta .button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: var(--font-color-light);
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.trips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.trips img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trips h3 {
+    color: var(--secondary-color);
+}
+
+.trips-table {
+    margin-top: 30px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th, .trips-table td {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--secondary-color);
+    color: var(--font-color-light);
+}
+
+  .site-overview {
+    margin-top: 40px;
+  }
+  .site-overview h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .grid-item {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .grid-item p {
+    color: var(--font-color-dark);
+    font-size: 1rem;
+  }
+  
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
   .company-info {
     background-color: var(--accent1-color);
     padding: 20px;
